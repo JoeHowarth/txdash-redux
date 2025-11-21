@@ -1,0 +1,22 @@
+{
+	"name": "stressnet-dashboard",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"packageManager": "bun@1.1.0",
+	"workspaces": ["packages/*"],
+	"scripts": {
+		"check": "bun run format && bun run typecheck && bun run lint",
+		"typecheck": "tsc -b",
+		"build": "tsc -b",
+		"lint": "bunx biome check .",
+		"format": "bunx biome format --write .",
+		"dev:server": "cd packages/server && bun run dev",
+		"dev:client": "cd packages/client && bun run dev"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.6.4",
+		"@types/node": "^20.11.30",
+		"typescript": "^5.4.0"
+	}
+}

@@ -1,0 +1,9 @@
+node_modules
+bun.lockb
+dist
+build
+.turbo
+.DS_Store
+*.tsbuildinfo
+.vite
+coverage
