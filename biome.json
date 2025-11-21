@@ -10,6 +10,6 @@
 		}
 	},
 	"files": {
-		"ignore": ["**/dist/**", "**/build/**", "**/node_modules/**"]
+		"ignore": ["**/dist/**", "**/build/**", "**/node_modules/**", "packages/server/reports/**"]
 	}
 }
